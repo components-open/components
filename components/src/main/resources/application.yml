@@ -1,5 +1,18 @@
+spring:
+  application:
+    name: components
+server:
+  port: 10010
+# 日志配置
 logging:
   level:
     root: info
   file:
     path: classpath:logback-spring.xml
+# 自定义swagger配置
+swagger:
+  enable: true
+  application-name: ${spring.application.name}
+  application-version: 1.0
+  application-description: spring swagger 3.0
+  try-host: http://localhost:${server.port}

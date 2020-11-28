@@ -6,6 +6,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
+/**
+ * 1.访问接口文档：http://localhost:10010/swagger-ui/index.html
+ */
 // 不自动加载数据源，配置后再加载
 @SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
 public class ComponentsApplication {
